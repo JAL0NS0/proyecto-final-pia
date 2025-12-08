@@ -66,7 +66,7 @@ Para garantizar que el modelo funcione cuando el usuario más lo necesita (mal c
 * 🌑 **Ruido de Sensor:** Simulación de cámaras de baja calidad en entornos oscuros.
 
 > **Estrategia de Aumentación:**
-> ![Data Augmentation](/docs/imgs/data aumentation.png)
+> ![Data Augmentation](docs/imgs/data aumentation.png)
 > *(Figura 1: Entrenamiento robusto mediante inyección de ruido y clima sintético)*
 
 ---
