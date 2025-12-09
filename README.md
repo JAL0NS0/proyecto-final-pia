@@ -76,58 +76,46 @@ Para garantizar que el modelo funcione cuando el usuario más lo necesita (mal c
 
 Se evaluaron dos variantes del modelo para determinar la viabilidad en el borde:
 
-| Modelo | Input Size | Precisión (mAP@50) | Latencia (T4 GPU) | Estimado Edge (CPU ARM) |
+| Modelo | Input Size | Precisión (mAP@50) | Latencia (T4 GPU) |
 | :--- | :--- | :--- | :--- | :--- |
-| **SenseLink-AI Fast** | **320x320** | **[0.XX]** | **~6ms** | **~[XX] FPS (Viable)** |
-| SenseLink-AI High | 640x640 | [0.883] | ~7.95ms | <1 FPS (Lento) |
+| **SenseLink-AI Fast** | **320x320** | **0.797** | **~7.72ms** |
+| SenseLink-AI High | 640x640 | [0.883] | ~7.95ms |
 
 *El modelo **Fast (320px)** fue seleccionado como la versión estable para despliegue.*
 
----
-
 ## ⚙️ Instalación e Inferencia
 
-Este repositorio contiene el código para entrenar, evaluar y ejecutar inferencia con el modelo.
+Este repositorio incluye una aplicación web de demostración (basada en Streamlit) para interactuar con el modelo fácilmente.
 
-### 1. Clonar el repositorio
+### 1\. Clonar el repositorio
+
 ```bash
-git clone [https://github.com/TU_USUARIO/SenseLink.git](https://github.com/TU_USUARIO/SenseLink.git)
+git clone https://github.com/TU_USUARIO/SenseLink.git
 cd SenseLink
-````
+```
 
 ### 2\. Instalar Dependencias
+
+Se recomienda utilizar un entorno virtual (venv):
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### 3\. Ejecutar Demo (Inferencia)
+### 3\. Ejecutar Demo (Interfaz Gráfica)
 
-Para probar el modelo usando tu webcam o un video de prueba:
+Para iniciar la interfaz web local, cargar imágenes/videos y ver las métricas de inferencia en tiempo real:
 
 ```bash
-# Inferencia visualizando las cajas delimitadoras
-yolo predict model=models/best_320_optimized.pt source=0 show=True
+streamlit run app.py
 ```
+
+*Esto abrirá automáticamente una pestaña en tu navegador en `http://localhost:8501`.*
 
 -----
-
-## 📂 Estructura del Proyecto
-
-```text
-SenseLink/
-├── data/               # Scripts de descarga, balanceo y aumentación
-├── models/             # Pesos entrenados (best_320.pt, best_640.pt)
-├── runs/               # Logs de entrenamiento y gráficas de métricas
-├── src/
-│   ├── augmentation.py # Lógica de balanceo con Albumentations
-│   └── train.py        # Pipeline de entrenamiento
-├── requirements.txt    # Librerías necesarias
-└── README.md           # Documentación
-```
 
 ## 👥 Autores y Créditos
 
   * **Desarrollo del Modelo:** Joaquin Alonso Marroquin Amaya
-  * **Curso:** Capstone Project - Postrado en Inteligencia Artifical, Universidad Galileo
+  * **Curso:** Capstone Project - Postgrado en Inteligencia Artificial, Universidad Galileo
   * **Herramientas:** Ultralytics YOLO, Albumentations, Roboflow
