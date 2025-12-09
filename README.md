@@ -78,7 +78,7 @@ Se evaluaron dos variantes del modelo para determinar la viabilidad en el borde:
 | Modelo | Input Size | Precisión (mAP@50) | Latencia (T4 GPU) | Estimado Edge (CPU ARM) |
 | :--- | :--- | :--- | :--- | :--- |
 | **SenseLink-AI Fast** | **320x320** | **[0.XX]** | **~6ms** | **~[XX] FPS (Viable)** |
-| SenseLink-AI High | 640x640 | [0.XX] | ~10ms | <1 FPS (Lento) |
+| SenseLink-AI High | 640x640 | [0.883] | ~7.95ms | <1 FPS (Lento) |
 
 *El modelo **Fast (320px)** fue seleccionado como la versión estable para despliegue.*
 
