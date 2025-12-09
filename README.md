@@ -90,8 +90,8 @@ Este repositorio incluye una aplicación web de demostración (basada en Streaml
 ### 1\. Clonar el repositorio
 
 ```bash
-git clone https://github.com/TU_USUARIO/SenseLink.git
-cd SenseLink
+git clone https://github.com/JAL0NS0/proyecto-final-pia.git
+cd Demo
 ```
 
 ### 2\. Instalar Dependencias
