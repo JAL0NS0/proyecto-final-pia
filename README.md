@@ -77,7 +77,7 @@ Para garantizar que el modelo funcione cuando el usuario más lo necesita (mal c
 Se evaluaron dos variantes del modelo para determinar la viabilidad en el borde:
 
 | Modelo | Input Size | Precisión (mAP@50) | Latencia (T4 GPU) |
-| :--- | :--- | :--- | :--- | :--- |
+| :--- | :--- | :--- | :--- |
 | **SenseLink-AI Fast** | **320x320** | **0.797** | **~7.72ms** |
 | SenseLink-AI High | 640x640 | [0.883] | ~7.95ms |
 
