@@ -1,0 +1,11 @@
+**📂 Dataset**
+
+Puedes acceder al dataset completo (combinado y listo para YOLO) aquí:
+🔗 **[Link al archivo .zip en Google Drive](https://drive.google.com/file/d/14QXFFqjyD2-2Q34Cl7rqWkDW-69hqrZh/view?usp=sharing)**
+
+**Composición del Dataset:**
+El archivo es una compilación de los siguientes datasets de Roboflow:
+1.  **Semáforos:** [Ver fuente original](https://universe.roboflow.com/universidad-kk6cy/color-recognition-in-traffic-lights/dataset/3)
+2.  **Pasos de Cebra:** [Ver fuente original](https://universe.roboflow.com/testestest/crosswalk_2-yuh40/dataset/5)
+3.  **Escaleras:** [Ver fuente original](https://universe.roboflow.com/new-workspace-8pb5d/stair-6rbxo/dataset/2)
+4.  **Baches y Obstáculos:** [Ver fuente original](https://universe.roboflow.com/object-detection-yixt3/smart-blind-stick-lzoqq/dataset/2)
